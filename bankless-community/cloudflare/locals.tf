@@ -1,7 +1,8 @@
 locals {
-  cloudflare_zone_name = "bankless.community"
-  cloudflare_zone_id   = "REPLACEME"
-  enable_dnssec        = false
+  cloudflare_account_name = "BanklessDAO"
+  cloudflare_zone_name    = "bankless.community"
+  cloudflare_account_id   = "f037e56e89293a057740de681ac9abbe"
+  enable_dnssec           = false
 
   caa_records = {
     "letsencrypt" = {
