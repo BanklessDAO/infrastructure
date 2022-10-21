@@ -1,7 +1,7 @@
 locals {
   cloudflare_account_name = "BanklessDAO"
   cloudflare_zone_name    = "bankless.community"
-  cloudflare_account_id   = "f037e56e89293a057740de681ac9abbe"
+  cloudflare_account_id   = "c9429b53ddbb6e2c88cc4a0184f1eba1"
   enable_dnssec           = false
 
   caa_records = {
@@ -77,7 +77,6 @@ locals {
     "join"             = "cname.vercel-dns.com.",
     "academy"          = "cname.vercel-dns.com.",
     "docs"             = "hosting.gitbook.io.",
-    "infosec"          = "banklessdao.github.io.",
     "bountyboard"      = "cname.vercel-dns.com.",
     "test-bountyboard" = "cname.vercel-dns.com.",
     "season2"          = "cname.vercel-dns.com.",
