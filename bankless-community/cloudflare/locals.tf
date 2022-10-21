@@ -77,7 +77,6 @@ locals {
     "join"             = "cname.vercel-dns.com.",
     "academy"          = "cname.vercel-dns.com.",
     "docs"             = "hosting.gitbook.io.",
-    "infosec"          = "banklessdao.github.io.",
     "bountyboard"      = "cname.vercel-dns.com.",
     "test-bountyboard" = "cname.vercel-dns.com.",
     "season2"          = "cname.vercel-dns.com.",
