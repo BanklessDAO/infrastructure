@@ -65,7 +65,7 @@ resource "cloudflare_record" "banklessdao_a_record" {
   type     = "A"
   value    = each.value.value
   ttl      = 1
-  proxied  = true
+  proxied  = each.value.proxied
   depends_on = [
     cloudflare_zone.banklessdao
   ]
@@ -78,7 +78,7 @@ resource "cloudflare_record" "banklessdao_aaa_record" {
   type     = "AAAA"
   value    = each.value.value
   ttl      = 1
-  proxied  = true
+  proxied  = each.value.proxied
   depends_on = [
     cloudflare_zone.banklessdao
   ]
