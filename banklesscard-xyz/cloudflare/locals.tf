@@ -63,6 +63,10 @@ locals {
       "name"  = "mailjet._domainkey",
       "value" = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/LWVu+TuOQOQg8vJXnxrnF+HxJ6sK3vyx7lp8GuOQRnH6vJt3R1Mosawr3f2WVqbR2XQa2Cf++YoHbZBecyMGgR1vdAdqdvN8+LL3ojTLaPE5eOJxfmeE+VK6I62eIie6R37PN/deGU6dO8ocUhL1LL5MDrI9RifnnzurEgM0lQIDAQAB"
     },
+    "getresponse_dkim" = {
+      "name"  = "3ddafdbb._domainkey",
+      "value" = "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCyOIbnL0nUdZ2fqEbdnsxSadJW7ozfEMhKr1c71lRbuuEMbc+4c4pP8Q5nuZTO82Zjm2110GPagGqfpF993K08IWFj/ZHIojIVuIgDuiZiSwwFMmHWMxXvbOdpyE0M4wYEi0o3cf9P3fcjq6PaEUpvnblV/NW8jYtNXHXEClozKwIDAQAB"
+    },
     "github_verification" = {
       "name"  = "_github-challenge-Bankless-Card-org",
       "value" = "7a152d099e"

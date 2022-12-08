@@ -88,42 +88,91 @@ locals {
   a_records = {
     "apex" = {
       "name"  = "@",
-      "value" = "76.76.21.21"
+      "value" = "76.76.21.21",
+      "proxied" = false
     },
     "infosec1" = {
       "name"  = "infosec",
-      "value" = "185.199.108.153"
+      "value" = "185.199.108.153",
+      "proxied" = false
     },
     "infosec2" = {
       "name"  = "infosec",
-      "value" = "185.199.109.153"
+      "value" = "185.199.109.153",
+      "proxied" = false
     },
     "infosec3" = {
       "name"  = "infosec",
-      "value" = "185.199.110.153"
+      "value" = "185.199.110.153",
+      "proxied" = false
     },
     "infosec4" = {
       "name"  = "infosec",
-      "value" = "185.199.111.153"
+      "value" = "185.199.111.153",
+      "proxied" = false
+    },
+    "madhatter1" = {
+      "name"  = "madhatter",
+      "value" = "185.199.108.153",
+      "proxied" = false
+    },
+    "madhatter2" = {
+      "name"  = "madhatter",
+      "value" = "185.199.109.153",
+      "proxied" = false
+    },
+    "madhatter3" = {
+      "name"  = "madhatter",
+      "value" = "185.199.110.153",
+      "proxied" = false
+    },
+    "madhatter4" = {
+      "name"  = "madhatter",
+      "value" = "185.199.111.153",
+      "proxied" = false
     }
   }
 
   aaa_records = {
     "infosec1" = {
       "name"  = "infosec",
-      "value" = "2606:50c0:8000::153"
+      "value" = "2606:50c0:8000::153",
+      "proxied" = false
     },
     "infosec2" = {
       "name"  = "infosec",
-      "value" = "2606:50c0:8001::153"
+      "value" = "2606:50c0:8001::153",
+      "proxied" = false
     },
     "infosec3" = {
       "name"  = "infosec",
-      "value" = "2606:50c0:8002::153"
+      "value" = "2606:50c0:8002::153",
+      "proxied" = false
     },
     "infosec4" = {
       "name"  = "infosec",
-      "value" = "2606:50c0:8003::153"
+      "value" = "2606:50c0:8003::153",
+      "proxied" = false
+    },
+    "madhatter1" = {
+      "name"  = "madhatter",
+      "value" = "2606:50c0:8000::153",
+      "proxied" = false
+    },
+    "madhatter2" = {
+      "name"  = "madhatter",
+      "value" = "2606:50c0:8001::153",
+      "proxied" = false
+    },
+    "madhatter3" = {
+      "name"  = "madhatter",
+      "value" = "2606:50c0:8002::153",
+      "proxied" = false
+    },
+    "madhatter4" = {
+      "name"  = "madhatter",
+      "value" = "2606:50c0:8003::153",
+      "proxied" = false
     }
   }
 }
