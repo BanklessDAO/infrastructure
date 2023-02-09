@@ -66,6 +66,14 @@ locals {
     "spf_record" = {
       "name"  = "@",
       "value" = "v=spf1 include:_spf.google.com mx -all"
+    },
+    "thrivecoin1" = {
+      "name"  = "_acme-challenge.thrivecoin",
+      "value" = "gA0NwazRxdLEtt0zeqouWCbN5nzKFdlfrO4XEa58PWA"
+    },
+    "thrivecoin2" = {
+      "name"  = "_cf-custom-hostname.thrivecoin",
+      "value" = "82213a78-50fb-4679-9ac3-afa0e5a9c78a"
     }
   }
 
@@ -82,96 +90,97 @@ locals {
     "season2"          = "cname.vercel-dns.com.",
     "season3"          = "cname.vercel-dns.com.",
     "season4"          = "cname.vercel-dns.com.",
-    "season5"          = "cname.vercel-dns.com."
+    "season5"          = "cname.vercel-dns.com.",
+    "thrivecoin"       = "app.thrivecoin.com"
   }
 
   a_records = {
     "apex" = {
-      "name"  = "@",
-      "value" = "76.76.21.21",
+      "name"    = "@",
+      "value"   = "76.76.21.21",
       "proxied" = false
     },
     "infosec1" = {
-      "name"  = "infosec",
-      "value" = "185.199.108.153",
+      "name"    = "infosec",
+      "value"   = "185.199.108.153",
       "proxied" = false
     },
     "infosec2" = {
-      "name"  = "infosec",
-      "value" = "185.199.109.153",
+      "name"    = "infosec",
+      "value"   = "185.199.109.153",
       "proxied" = false
     },
     "infosec3" = {
-      "name"  = "infosec",
-      "value" = "185.199.110.153",
+      "name"    = "infosec",
+      "value"   = "185.199.110.153",
       "proxied" = false
     },
     "infosec4" = {
-      "name"  = "infosec",
-      "value" = "185.199.111.153",
+      "name"    = "infosec",
+      "value"   = "185.199.111.153",
       "proxied" = false
     },
     "madhatter1" = {
-      "name"  = "madhatter",
-      "value" = "185.199.108.153",
+      "name"    = "madhatter",
+      "value"   = "185.199.108.153",
       "proxied" = false
     },
     "madhatter2" = {
-      "name"  = "madhatter",
-      "value" = "185.199.109.153",
+      "name"    = "madhatter",
+      "value"   = "185.199.109.153",
       "proxied" = false
     },
     "madhatter3" = {
-      "name"  = "madhatter",
-      "value" = "185.199.110.153",
+      "name"    = "madhatter",
+      "value"   = "185.199.110.153",
       "proxied" = false
     },
     "madhatter4" = {
-      "name"  = "madhatter",
-      "value" = "185.199.111.153",
+      "name"    = "madhatter",
+      "value"   = "185.199.111.153",
       "proxied" = false
     }
   }
 
   aaa_records = {
     "infosec1" = {
-      "name"  = "infosec",
-      "value" = "2606:50c0:8000::153",
+      "name"    = "infosec",
+      "value"   = "2606:50c0:8000::153",
       "proxied" = false
     },
     "infosec2" = {
-      "name"  = "infosec",
-      "value" = "2606:50c0:8001::153",
+      "name"    = "infosec",
+      "value"   = "2606:50c0:8001::153",
       "proxied" = false
     },
     "infosec3" = {
-      "name"  = "infosec",
-      "value" = "2606:50c0:8002::153",
+      "name"    = "infosec",
+      "value"   = "2606:50c0:8002::153",
       "proxied" = false
     },
     "infosec4" = {
-      "name"  = "infosec",
-      "value" = "2606:50c0:8003::153",
+      "name"    = "infosec",
+      "value"   = "2606:50c0:8003::153",
       "proxied" = false
     },
     "madhatter1" = {
-      "name"  = "madhatter",
-      "value" = "2606:50c0:8000::153",
+      "name"    = "madhatter",
+      "value"   = "2606:50c0:8000::153",
       "proxied" = false
     },
     "madhatter2" = {
-      "name"  = "madhatter",
-      "value" = "2606:50c0:8001::153",
+      "name"    = "madhatter",
+      "value"   = "2606:50c0:8001::153",
       "proxied" = false
     },
     "madhatter3" = {
-      "name"  = "madhatter",
-      "value" = "2606:50c0:8002::153",
+      "name"    = "madhatter",
+      "value"   = "2606:50c0:8002::153",
       "proxied" = false
     },
     "madhatter4" = {
-      "name"  = "madhatter",
-      "value" = "2606:50c0:8003::153",
+      "name"    = "madhatter",
+      "value"   = "2606:50c0:8003::153",
       "proxied" = false
     }
   }
