@@ -74,7 +74,15 @@ locals {
     "thrivecoin2" = {
       "name"  = "_cf-custom-hostname.thrivecoin",
       "value" = "82213a78-50fb-4679-9ac3-afa0e5a9c78a"
-    }
+    },
+    "thrivecoin3" = {
+      "name"  = "_acme-challenge.rewards",
+      "value" = "minzkovFkor0aT0BMWrWkBlgf8aWLbUg964THAr0ZeI"
+    },
+    "thrivecoin4" = {
+      "name"  = "_cf-custom-hostname.rewards",
+      "value" = "72d56ea8-4aa7-4c5a-8891-cc6c8e3ab811"
+    },
   }
 
   # Must be unique keys, only the last key will be used.
@@ -91,7 +99,8 @@ locals {
     "season3"          = "cname.vercel-dns.com.",
     "season4"          = "cname.vercel-dns.com.",
     "season5"          = "cname.vercel-dns.com.",
-    "thrivecoin"       = "app.thrivecoin.com"
+    "thrivecoin"       = "app.thrivecoin.com",
+    "rewards"          = "app.thrivecoin.com"
   }
 
   a_records = {
