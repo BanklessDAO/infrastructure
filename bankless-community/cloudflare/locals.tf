@@ -67,14 +67,6 @@ locals {
       "name"  = "@",
       "value" = "v=spf1 include:_spf.google.com mx -all"
     },
-    "thrivecoin1" = {
-      "name"  = "_acme-challenge.thrivecoin",
-      "value" = "gA0NwazRxdLEtt0zeqouWCbN5nzKFdlfrO4XEa58PWA"
-    },
-    "thrivecoin2" = {
-      "name"  = "_cf-custom-hostname.thrivecoin",
-      "value" = "82213a78-50fb-4679-9ac3-afa0e5a9c78a"
-    },
     "thrivecoin3" = {
       "name"  = "_acme-challenge.rewards",
       "value" = "minzkovFkor0aT0BMWrWkBlgf8aWLbUg964THAr0ZeI"
@@ -99,7 +91,6 @@ locals {
     "season3"          = "cname.vercel-dns.com.",
     "season4"          = "cname.vercel-dns.com.",
     "season5"          = "cname.vercel-dns.com.",
-    "thrivecoin"       = "app.thrivecoin.com",
     "rewards"          = "app.thrivecoin.com"
   }
 
