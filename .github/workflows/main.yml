@@ -1,0 +1,22 @@
+name: 'Terraform Testing'
+
+on: pull_request
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Enter repo directory
+        run: cd ~/work/infrastructure/infrastructure
+      - name: Install Terraform
+        run: |
+          TERRAFORM_VERSION=($(wget -q -O- https://api.github.com/repos/hashicorp/terraform/releases 2> /dev/null | awk '$1~/tag_name/&&$2!~/beta|rc/{split($2,a,/"|v/);print a[3];exit}'))
+          cd $HOME
+          wget https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+          unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+      - name: Setup Python
+        uses: actions/setup-python@v2
+      - name: Run pre-commit
+        uses: pre-commit/action@v2.0.0
