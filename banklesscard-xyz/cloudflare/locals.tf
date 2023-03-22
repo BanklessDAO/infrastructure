@@ -115,12 +115,6 @@ locals {
       "ttl"     = 1,
       "proxied" = true
     },
-    "signup" = {
-      "name"    = "signup",
-      "value"   = "squeeze.gr8.com",
-      "ttl"     = 1,
-      "proxied" = false
-    },
     "vault" = {
       "name"    = "vault",
       "value"   = "bfaf8f01-a020-4251-b61e-e4cef7400cba.cfargotunnel.com",
@@ -181,6 +175,24 @@ locals {
     "banklesscard_1" = {
       "name"    = "banklesscard.xyz",
       "value"   = "185.199.111.153",
+      "ttl"     = 1,
+      "proxied" = true
+    },
+    "banklesscard_signup_1" = {
+      "name"    = "signup",
+      "value"   = "3.13.222.255",
+      "ttl"     = 1,
+      "proxied" = true
+    },
+    "banklesscard_signup_2" = {
+      "name"    = "signup",
+      "value"   = "3.13.246.91",
+      "ttl"     = 1,
+      "proxied" = true
+    },
+    "banklesscard_signup_3" = {
+      "name"    = "signup",
+      "value"   = "3.130.60.26",
       "ttl"     = 1,
       "proxied" = true
     }
