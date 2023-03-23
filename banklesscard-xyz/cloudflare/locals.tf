@@ -151,6 +151,12 @@ locals {
       "ttl"     = 1,
       "proxied" = false
     },
+    "taxes" = {
+      "name"    = "taxes",
+      "value"   = "darling-dusk-511066.netlify.app",
+      "ttl"     = 1,
+      "proxied" = false
+    },
   }
 
   a_records = {
@@ -182,19 +188,19 @@ locals {
       "name"    = "signup",
       "value"   = "3.13.222.255",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_signup_2" = {
       "name"    = "signup",
       "value"   = "3.13.246.91",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_signup_3" = {
       "name"    = "signup",
       "value"   = "3.130.60.26",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     }
   }
 
