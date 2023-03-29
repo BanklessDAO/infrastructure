@@ -150,6 +150,12 @@ locals {
       "value"   = "banklesscard-xyz.hs11b.dkim.hubspotemail.net.",
       "ttl"     = 1,
       "proxied" = false
+    },
+    "taxman" = {
+      "name"    = "taxman",
+      "value"   = "bankless-card.github.io",
+      "ttl"     = 1,
+      "proxied" = false
     }
   }
 
@@ -195,30 +201,6 @@ locals {
       "value"   = "3.130.60.26",
       "ttl"     = 1,
       "proxied" = false
-    },
-    "taxman_3" = {
-      "name"    = "taxman",
-      "value"   = "185.199.108.153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_4" = {
-      "name"    = "taxman",
-      "value"   = "185.199.109.153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_2" = {
-      "name"    = "taxman",
-      "value"   = "185.199.110.153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_1" = {
-      "name"    = "taxman",
-      "value"   = "185.199.111.153",
-      "ttl"     = 1,
-      "proxied" = true
     }
   }
 
@@ -243,30 +225,6 @@ locals {
     },
     "banklesscard_1" = {
       "name"    = "banklesscard.xyz",
-      "value"   = "2606:50c0:8003::153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_3" = {
-      "name"    = "taxman",
-      "value"   = "2606:50c0:8000::153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_2" = {
-      "name"    = "taxman",
-      "value"   = "2606:50c0:8001::153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_4" = {
-      "name"    = "taxman",
-      "value"   = "2606:50c0:8002::153",
-      "ttl"     = 1,
-      "proxied" = true
-    },
-    "taxman_1" = {
-      "name"    = "taxman",
       "value"   = "2606:50c0:8003::153",
       "ttl"     = 1,
       "proxied" = true
