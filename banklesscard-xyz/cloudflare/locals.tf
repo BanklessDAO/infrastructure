@@ -151,6 +151,18 @@ locals {
       "ttl"     = 1,
       "proxied" = false
     },
+    "convertkit_auth_1" = {
+      "name"    = "ckespa",
+      "value"   = "spf.dm-1yz7e96d.sg8.convertkit.com.",
+      "ttl"     = 1,
+      "proxied" = false
+    },
+    "convertkit_auth_2" = {
+      "name"    = "cka._domainkey",
+      "value"   = "dkim.dm-1yz7e96d.sg8.convertkit.com.",
+      "ttl"     = 1,
+      "proxied" = false
+    },
     "taxman" = {
       "name"    = "taxman",
       "value"   = "bankless-card.github.io",
