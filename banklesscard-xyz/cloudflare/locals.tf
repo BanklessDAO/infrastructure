@@ -113,7 +113,7 @@ locals {
       "name"    = "www",
       "value"   = "bankless-card.github.io",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "vault" = {
       "name"    = "vault",
@@ -176,25 +176,25 @@ locals {
       "name"    = "banklesscard.xyz",
       "value"   = "185.199.108.153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_4" = {
       "name"    = "banklesscard.xyz",
       "value"   = "185.199.109.153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_2" = {
       "name"    = "banklesscard.xyz",
       "value"   = "185.199.110.153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_1" = {
       "name"    = "banklesscard.xyz",
       "value"   = "185.199.111.153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_signup_1" = {
       "name"    = "signup",
