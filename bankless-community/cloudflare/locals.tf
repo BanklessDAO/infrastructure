@@ -75,6 +75,10 @@ locals {
       "name"  = "_cf-custom-hostname.rewards",
       "value" = "72d56ea8-4aa7-4c5a-8891-cc6c8e3ab811"
     },
+    "onboarding" = {
+      "name"  = "_vercel",
+      "value" = "vc-domain-verify=onboarding.bankless.community,aba106f3bd9e0d901f16"
+    },
   }
 
   # Must be unique keys, only the last key will be used.
