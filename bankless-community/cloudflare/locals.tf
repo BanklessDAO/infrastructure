@@ -95,7 +95,8 @@ locals {
     "season3"          = "cname.vercel-dns.com.",
     "season4"          = "cname.vercel-dns.com.",
     "season5"          = "cname.vercel-dns.com.",
-    "rewards"          = "app.thrivecoin.com"
+    "rewards"          = "app.thrivecoin.com",
+    "onboarding"       = "cname.vercel-dns.com."
   }
 
   a_records = {
