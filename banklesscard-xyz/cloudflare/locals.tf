@@ -221,25 +221,25 @@ locals {
       "name"    = "banklesscard.xyz",
       "value"   = "2606:50c0:8000::153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_2" = {
       "name"    = "banklesscard.xyz",
       "value"   = "2606:50c0:8001::153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_4" = {
       "name"    = "banklesscard.xyz",
       "value"   = "2606:50c0:8002::153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "banklesscard_1" = {
       "name"    = "banklesscard.xyz",
       "value"   = "2606:50c0:8003::153",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     }
   }
 }
