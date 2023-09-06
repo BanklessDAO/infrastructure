@@ -213,7 +213,13 @@ locals {
       "value"   = "3.130.60.26",
       "ttl"     = 1,
       "proxied" = false
-    }
+    },
+  "banklesscard_beta" = {
+    "name"     =  "beta",
+    "value"    =  "172.105.3.37",
+    "ttl"      =   1,
+    "proxied"  =  false
+    },
   }
 
   aaa_records = {
