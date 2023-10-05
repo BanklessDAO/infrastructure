@@ -17,9 +17,9 @@ resource "cloudflare_pages_project" "deployment_configs" {
   }
 
   build_config {
-    build_command       = "npx next build"
-    destination_dir     = "out"
-    root_dir            = ""
+    build_command   = "npx next build"
+    destination_dir = "out"
+    root_dir        = ""
   }
 
   deployment_configs {
@@ -28,9 +28,9 @@ resource "cloudflare_pages_project" "deployment_configs" {
         ENVIRONMENT = "preview"
       }
       secrets = {
-        NEXT_PUBLIC_ALCHEMY_API_KEY = "xoSmxF5VP5yJq0zV-MedaxZUCYSt7DUN"
-        NEXT_PUBLIC_BLOCKNATIVE_API_KEY = "9176eee3-12fa-431c-93c5-27d1f40d4c91"
-        NEXT_PUBLIC_INFURA_PROJECT_ID = "9344a875cace468ca6c8029147cda56a"
+        NEXT_PUBLIC_ALCHEMY_API_KEY          = "xoSmxF5VP5yJq0zV-MedaxZUCYSt7DUN"
+        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = "9176eee3-12fa-431c-93c5-27d1f40d4c91"
+        NEXT_PUBLIC_INFURA_PROJECT_ID        = "9344a875cace468ca6c8029147cda56a"
         NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = "e1726502f108ccc7845fc598e1a605f3"
       }
       always_use_latest_compatibility_date = true
@@ -40,9 +40,9 @@ resource "cloudflare_pages_project" "deployment_configs" {
         ENVIRONMENT = "production"
       }
       secrets = {
-        NEXT_PUBLIC_ALCHEMY_API_KEY = "xoSmxF5VP5yJq0zV-MedaxZUCYSt7DUN"
-        NEXT_PUBLIC_BLOCKNATIVE_API_KEY = "9176eee3-12fa-431c-93c5-27d1f40d4c91"
-        NEXT_PUBLIC_INFURA_PROJECT_ID = "9344a875cace468ca6c8029147cda56a"
+        NEXT_PUBLIC_ALCHEMY_API_KEY          = "xoSmxF5VP5yJq0zV-MedaxZUCYSt7DUN"
+        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = "9176eee3-12fa-431c-93c5-27d1f40d4c91"
+        NEXT_PUBLIC_INFURA_PROJECT_ID        = "9344a875cace468ca6c8029147cda56a"
         NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = "e1726502f108ccc7845fc598e1a605f3"
       }
       always_use_latest_compatibility_date = true
