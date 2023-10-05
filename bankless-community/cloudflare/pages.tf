@@ -1,3 +1,8 @@
+variable "alchemy_api_key" { sensitive = true }
+variable "blocknative_api_key" { sensitive = true }
+variable "infura_project_id" { sensitive = true }
+variable "walletconnect_project_id" { sensitive = true }
+
 resource "cloudflare_pages_project" "deployment_configs" {
   account_id        = local.cloudflare_account_id
   name              = local.cloudflare_account_name
@@ -28,10 +33,10 @@ resource "cloudflare_pages_project" "deployment_configs" {
         ENVIRONMENT = "preview"
       }
       secrets = {
-        NEXT_PUBLIC_ALCHEMY_API_KEY          = "xoSmxF5VP5yJq0zV-MedaxZUCYSt7DUN"
-        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = "9176eee3-12fa-431c-93c5-27d1f40d4c91"
-        NEXT_PUBLIC_INFURA_PROJECT_ID        = "9344a875cace468ca6c8029147cda56a"
-        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = "e1726502f108ccc7845fc598e1a605f3"
+        NEXT_PUBLIC_ALCHEMY_API_KEY          = alchemy_api_key
+        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = blocknative_api_key
+        NEXT_PUBLIC_INFURA_PROJECT_ID        = infura_project_id
+        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = walletconnect_project_id
       }
       always_use_latest_compatibility_date = true
     }
@@ -40,10 +45,10 @@ resource "cloudflare_pages_project" "deployment_configs" {
         ENVIRONMENT = "production"
       }
       secrets = {
-        NEXT_PUBLIC_ALCHEMY_API_KEY          = "xoSmxF5VP5yJq0zV-MedaxZUCYSt7DUN"
-        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = "9176eee3-12fa-431c-93c5-27d1f40d4c91"
-        NEXT_PUBLIC_INFURA_PROJECT_ID        = "9344a875cace468ca6c8029147cda56a"
-        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = "e1726502f108ccc7845fc598e1a605f3"
+        NEXT_PUBLIC_ALCHEMY_API_KEY          = alchemy_api_key
+        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = blocknative_api_key
+        NEXT_PUBLIC_INFURA_PROJECT_ID        = infura_project_id
+        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = walletconnect_project_id
       }
       always_use_latest_compatibility_date = true
     }
