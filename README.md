@@ -16,12 +16,21 @@ We're currently using Root First structure, meaning each folder contains a compl
     ├──── cloudflare                    # Contains DNS Records for BanklessCard.xyz
     └── README.md
 
+## Prerequisites
+
+* [Terraform](https://www.terraform.io/downloads.html)
+* [pre-commit](https://pre-commit.com/)
+
+Make sure you have `pre-commit`, and `terraform` in your `$PATH`.
+
 ## Terraform Cloud
 
 All infrastructure changes will automatically plan but require approval from infosec.bankless.community memeber.
 
 ## pre-commit
-This repo uses Yelp's [pre-commit](https://pre-commit.com/) to manage some pre-commit hooks automatically.  
-In order to use the hooks, make sure you have `pre-commit`, and `terraform` in your `$PATH`.  
-Once in your path you should run `make` in order to configure it. If you push commits that fail pre-commit, your PR will
-not pass tests
+Configure pre-commit hooks before making changes.
+If you push commits that fail pre-commit, your PR will not pass tests.
+
+```bash
+pre-commit install
+```
