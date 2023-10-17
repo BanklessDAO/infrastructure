@@ -1,8 +1,3 @@
-variable "alchemy_api_key" { sensitive = true }
-variable "blocknative_api_key" { sensitive = true }
-variable "infura_project_id" { sensitive = true }
-variable "walletconnect_project_id" { sensitive = true }
-
 resource "cloudflare_pages_project" "deployment_configs" {
   account_id        = local.cloudflare_account_id
   name              = local.cloudflare_account_name
