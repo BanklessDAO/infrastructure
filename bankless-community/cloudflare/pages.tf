@@ -40,10 +40,10 @@ resource "cloudflare_pages_project" "deployment_configs" {
         ENVIRONMENT = "production"
       }
       secrets = {
-        NEXT_PUBLIC_ALCHEMY_API_KEY          = alchemy_api_key
-        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = blocknative_api_key
-        NEXT_PUBLIC_INFURA_PROJECT_ID        = infura_project_id
-        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = walletconnect_project_id
+        NEXT_PUBLIC_ALCHEMY_API_KEY          = var.alchemy_api_key
+        NEXT_PUBLIC_BLOCKNATIVE_API_KEY      = var.blocknative_api_key
+        NEXT_PUBLIC_INFURA_PROJECT_ID        = var.infura_project_id
+        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = var.walletconnect_project_id
       }
       always_use_latest_compatibility_date = true
     }
