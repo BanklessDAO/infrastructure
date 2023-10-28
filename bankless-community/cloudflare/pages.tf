@@ -1,6 +1,6 @@
 resource "cloudflare_pages_project" "deployment_configs" {
   account_id        = local.cloudflare_account_id
-  name              = local.cloudflare_account_name
+  name              = lower(local.cloudflare_account_name)
   production_branch = "main"
 
   source {
