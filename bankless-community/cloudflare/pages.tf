@@ -45,7 +45,7 @@ resource "cloudflare_pages_project" "deployment_configs" {
         NEXT_PUBLIC_INFURA_PROJECT_ID        = var.infura_project_id
         NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = var.walletconnect_project_id
       }
-      always_use_latest_compatibility_date = true
+      always_use_latest_compatibility_date = false
     }
   }
 }
