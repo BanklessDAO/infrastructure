@@ -109,6 +109,18 @@ locals {
   # Must be unique keys, only the last key will be used.
   # Change to an Object to support more than 1 name (see examples above)
   cname_records = {
+    "app" = {
+      "name"    = "app",
+      "value"   = "bcard-app.vercel.app",
+      "ttl"     = 1,
+      "proxied" = true
+    },
+    "staging" = {
+      "name"    = "staging",
+      "value"   = "bcard-app-staging.vercel.app",
+      "ttl"     = 1,
+      "proxied" = true
+    },
     "www" = {
       "name"    = "www",
       "value"   = "bankless-card.github.io",
