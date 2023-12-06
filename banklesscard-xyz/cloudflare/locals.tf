@@ -113,13 +113,13 @@ locals {
       "name"    = "app",
       "value"   = "bcard-app.vercel.app",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "staging" = {
       "name"    = "staging",
       "value"   = "bcard-app-staging.vercel.app",
       "ttl"     = 1,
-      "proxied" = true
+      "proxied" = false
     },
     "www" = {
       "name"    = "www",
