@@ -225,6 +225,18 @@ locals {
       "value"   = "3.130.60.26",
       "ttl"     = 1,
       "proxied" = false
+    },
+    "stagetx" = {
+      "name"    = "statetx",
+      "value"   = "165.227.248.39",
+      "ttl"     = 1,
+      "proxied" = false
+    },
+    "tx" = {
+      "name"    = "tx",
+      "value"   = "138.197.58.12",
+      "ttl"     = 1,
+      "proxied" = false
     }
   }
 
