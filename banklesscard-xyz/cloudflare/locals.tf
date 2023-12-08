@@ -227,7 +227,7 @@ locals {
       "proxied" = false
     },
     "stagetx" = {
-      "name"    = "statetx",
+      "name"    = "stagetx",
       "value"   = "165.227.248.39",
       "ttl"     = 1,
       "proxied" = false
