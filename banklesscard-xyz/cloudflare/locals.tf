@@ -180,6 +180,12 @@ locals {
       "value"   = "bankless-card.github.io",
       "ttl"     = 1,
       "proxied" = false
+    },
+    "support" = {
+      "name"    = "support",
+      "value"   = "2ab5be0753-hosting.gitbook.io",
+      "ttl"     = 1,
+      "proxied" = false
     }
   }
 
