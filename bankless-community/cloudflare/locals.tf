@@ -24,37 +24,23 @@ locals {
 
   mx_records = {
     "mx1" = {
-      "value"    = "aspmx.l.google.com.",
-      "priority" = "1",
+      "value"    = "	route1.mx.cloudflare.net.",
+      "priority" = "95",
       "ttl"      = 3600
     },
     "mx2" = {
-      "value"    = "alt1.aspmx.l.google.com.",
-      "priority" = "5",
+      "value"    = "	route2.mx.cloudflare.net.",
+      "priority" = "45",
       "ttl"      = 3600
     },
     "mx3" = {
-      "value"    = "alt2.aspmx.l.google.com.",
-      "priority" = "5",
-      "ttl"      = 3600
-    },
-    "mx4" = {
-      "value"    = "alt3.aspmx.l.google.com.",
-      "priority" = "10",
-      "ttl"      = 3600
-    },
-    "mx5" = {
-      "value"    = "alt4.aspmx.l.google.com.",
-      "priority" = "10",
+      "value"    = "route3.mx.cloudflare.net.",
+      "priority" = "79",
       "ttl"      = 3600
     }
   }
 
   txt_records = {
-    "google_dkim" = {
-      "name"  = "google._domainkey",
-      "value" = "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC31Rh5G/ZQmKjHHHck3ghiBj3J3BP3S9Fboll68HcoZEs+ow2ZSAIGig63CqkPgfUSvd+vQ4HU3rCSiMcx6QNsRYefR725oeZWS8kdDfo7MteafFVy0Jn6+Ih4FumHsMoTsLiA+8KwLfSeubvhkMmaqC7d5wphtd9suB9lzf1TEQIDAQAB"
-    },
     "vercel_verify" = {
       "name"  = "_vercel",
       "value" = "vc-domain-verify=academy.bankless.community,682cda25b6ad431ec166"
@@ -65,7 +51,7 @@ locals {
     },
     "spf_record" = {
       "name"  = "@",
-      "value" = "v=spf1 include:_spf.google.com mx -all"
+      "value" = "v=spf1 include:_spf.mx.cloudflare.net mx -all"
     },
     "thrivecoin3" = {
       "name"  = "_acme-challenge.rewards",
