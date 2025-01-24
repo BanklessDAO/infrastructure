@@ -70,17 +70,17 @@ locals {
   # Must be unique keys, only the last key will be used.
   # Change to an Object to support more than 1 name (see examples above)
   cname_records = {
-    "www"              = "blackflagdao.notion.site",
+    "www"              = "cname.vercel-dns.com.",
     "forum"            = "bankless.hosted-by-discourse.com.",
-    "join"             = "blackflagdao.notion.site",
+    "join"             = "cname.vercel-dns.com.",
     "academy"          = "cname.vercel-dns.com.",
     "docs"             = "hosting.gitbook.io.",
     "bountyboard"      = "cname.vercel-dns.com.",
     "test-bountyboard" = "cname.vercel-dns.com.",
-    "season2"          = "blackflagdao.notion.site",
-    "season3"          = "blackflagdao.notion.site",
-    "season4"          = "blackflagdao.notion.site",
-    "season5"          = "blackflagdao.notion.site",
+    "season2"          = "cname.vercel-dns.com.",
+    "season3"          = "cname.vercel-dns.com.",
+    "season4"          = "cname.vercel-dns.com.",
+    "season5"          = "cname.vercel-dns.com.",
     "rewards"          = "app.thrivecoin.com",
     "onboarding"       = "cname.vercel-dns.com."
   }
@@ -88,7 +88,7 @@ locals {
   a_records = {
     "apex" = {
       "name"    = "@",
-      "value"   = "208.103.161.33",
+      "value"   = "76.76.21.21",
       "proxied" = false
     },
     "infosec1" = {
