@@ -1,5 +1,5 @@
 locals {
-  cloudflare_account_name = "BanklessDAO"
+  cloudflare_account_name = "Black Flag DAO"
   cloudflare_zone_name    = "bankless.community"
   cloudflare_account_id   = "c9429b53ddbb6e2c88cc4a0184f1eba1"
   enable_dnssec           = false
