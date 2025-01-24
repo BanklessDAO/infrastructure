@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "BanklessDAO"
+    organization = "Black Flag DAO"
 
     workspaces {
       name = "bankless-community-cloudflare"
